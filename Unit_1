@@ -1,0 +1,110 @@
+# For sesion two:
+"""
+U - Understand
+    1. Is the mood variable expected to be updated within the function itself?
+    2. Are there any restrictions on what can be assigned to the mood variable?
+
+P - Plan
+    1) Create a new function by writing a function signature
+    2) Create a variable to store the current mood emoji
+    3) Print "Today's mood:" followed by the value of the variable
+    3) Call the created function
+
+I - Implement
+"""
+# Problem - Print List
+
+""" 
+def print_list(lst):
+    for item in lst:
+        print(item)
+        
+    
+lst = ["squirtle", "gengar", "charizard", "pikachu"]
+print_list(lst)
+"""
+
+# Problem - Print Double List
+"""
+def doubled(lst):
+    for item in lst:
+        print(item * 2)
+
+lst = [1, 2, 3]
+doubled(lst)
+ """   
+#Problem 3: Return Doubled List
+""" 
+def doubled(lst):
+    result = []
+    for item in lst:
+        result.append(item *2)
+    return result
+
+lst = [1,2,3]
+new_lst = doubled(lst)
+print(new_lst)
+"""
+# Problem 4: Flip Signs
+"""  
+def flip_sign(lst):
+    result = []
+    for item in lst:
+        result.append( item * -1)
+    return result    
+
+lst = [1,-2,-3,4]
+flipped_lst = flip_sign(lst)
+print(flipped_lst)
+"""
+
+# Problem 5: Max Difference
+"""  
+def max_difference(lst):
+    x = max(lst)
+    y = min(lst)
+    result = x - y
+    return result   
+
+lst = [5,30,8,10,2]
+max_diff = max_difference(lst)
+print(max_diff)
+"""
+
+# Problem 6: Below Threshold
+"""  
+def count_less_than(numbers, threshold):
+    counter = 0
+    for number in numbers:
+        if number < threshold:
+            counter +=1
+    return counter        
+
+
+numbers = [12,8,2,4,4,10]
+counter = count_less_than(numbers,3)
+print(counter)
+
+"""
+
+# Problem 7: Evens List
+"""  
+def get_evens(lst):
+    even = []
+    for number in lst:
+        if number % 2 == 0:
+            even += [number]
+    return even        
+
+lst = [1,2,3,4]
+evens_lst = get_evens(lst)
+print(evens_lst)
+"""
+
+# Problem 8: Multiples of Five
+''' 
+def multiples_of_five():
+    for x in range(5, 101, 5):
+        print(x)
+multiples_of_five()
+ 
